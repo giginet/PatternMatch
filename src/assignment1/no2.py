@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-'''
-    assignment1.no2
-    created by 25090335 Kohki Miki on 2011/07/19
-'''
+#
+#    assignment1.no2
+#    created by 25090335 Kohki Miki on 2011/07/19
+#
 from pattern import patterns
 from pattern.model import Pattern
 
