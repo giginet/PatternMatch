@@ -31,8 +31,8 @@ if __name__ == '__main__':
                     count += 1
             sum += count
         result.append(sum/10)
-pyplot.plot(result)
-pyplot.title("n = %d Type %s" % (n, 'A' if not type else 'B'))
-pyplot.ylabel('n')
-pyplot.xlabel('p' if not type else 'q')
-pyplot.show()
+    pyplot.plot(result)
+    pyplot.title("n = %d Type %s" % (n, 'A' if not type else 'B'))
+    pyplot.ylabel('n')
+    pyplot.xlabel('p' if not type else 'q')
+    pyplot.show()

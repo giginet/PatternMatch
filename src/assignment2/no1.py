@@ -42,10 +42,11 @@ class Perceptron(object):
             if a != b: e += 1
         return e
 
-x = numpy.matrix(numpy.random.rand(N)*2 - 1)
-x /= numpy.linalg.norm(x)
-p = Perceptron(x)
-pyplot.plot([p.epsilon(n) for n in xrange(100)])
-pyplot.xlabel("n")
-pyplot.ylabel("$\epsilon$")
-pyplot.show()
+if __name__ == '__main__':
+    x = numpy.matrix(numpy.random.rand(N)*2 - 1)
+    x /= numpy.linalg.norm(x)
+    p = Perceptron(x)
+    pyplot.plot([p.epsilon(n) for n in xrange(100)])
+    pyplot.xlabel("n")
+    pyplot.ylabel("$\epsilon$")
+    pyplot.show()

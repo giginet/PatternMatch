@@ -36,15 +36,16 @@ class Match(object):
         max_point = rs.index(m)
         return max_point%(N-M)+12, max_point/(N-M)+12
 
-# Lena画像を読み込む
-match = Match("../../Resources/lena256.gif")
-# テンプレート画像を生成
-#　左端の点を選ぶ
-tx = random.randint(0, N-M)
-ty = random.randint(0, N-M)
-# ランダムに選んだ点の中央点を出力
-print tx + M/2, ty + M/2 
-template = match.lena.crop((tx, ty, tx+M, ty+M))
-template.show()
-# テンプレート画像が元画像のどこの部分かを判定
-print match.search(template)
+if __name__ == '__main__':
+    # Lena画像を読み込む
+    match = Match("../../Resources/lena256.gif")
+    # テンプレート画像を生成
+    #　左端の点を選ぶ
+    tx = random.randint(0, N-M)
+    ty = random.randint(0, N-M)
+    # ランダムに選んだ点の中央点を出力
+    print tx + M/2, ty + M/2 
+    template = match.lena.crop((tx, ty, tx+M, ty+M))
+    template.show()
+    # テンプレート画像が元画像のどこの部分かを判定
+    print match.search(template)

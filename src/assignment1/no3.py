@@ -39,8 +39,8 @@ if __name__ == '__main__':
             result.append((sum/available))
         else:
             result.append(0)
-pyplot.plot(result)
-pyplot.title("n = %d Type %s Threshold = %d" % (n, 'A' if not type else 'B', THRESHOLD))
-pyplot.ylabel('frequency')
-pyplot.xlabel('p' if not type else 'q')
-pyplot.show()
+    pyplot.plot(result)
+    pyplot.title("n = %d Type %s Threshold = %d" % (n, 'A' if not type else 'B', THRESHOLD))
+    pyplot.ylabel('frequency')
+    pyplot.xlabel('p' if not type else 'q')
+    pyplot.show()
